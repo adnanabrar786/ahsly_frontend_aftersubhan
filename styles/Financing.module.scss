@@ -1,0 +1,296 @@
+@import "./Variables.module.scss";
+
+.Financing_wrapper {
+  width: 95%;
+  max-width: 1600px;
+  margin: 40px auto;
+  padding-left: 50px;
+
+  .small_heading {
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+  .heading_red {
+    margin-top: 40px;
+    color: $red;
+    text-align: center;
+    font-size: 36px;
+  }
+
+  .imagediv {
+    margin: auto;
+    margin-top: 40px;
+    width: 80%;
+    height: 450px;
+    position: relative;
+    border-radius: 20px;
+    .image {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .getstart_wrapper {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    .getstart_div {
+      width: 32%;
+      h4 {
+        text-align: center;
+        color: #2c3092;
+        font-weight: 700;
+      }
+      p {
+        margin-top: 20px;
+        text-align: center;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .differenceimagediv {
+    margin: auto;
+    margin-top: 50px;
+    width: 70%;
+    height: 250px;
+    position: relative;
+    .image {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .heading {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 36px;
+  }
+
+  .creditOptions_wrapper {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    font-style: normal;
+    .creditOptions_div {
+      width: 48%;
+      display: flex;
+      flex-direction: column;
+      h3 {
+        color: $red;
+        font-size: 24px;
+        text-align: center;
+      }
+      ul {
+        margin-top: 10px;
+        padding-left: 50px;
+        font-style: normal;
+        li {
+          font-weight: 500;
+          line-height: 36px;
+          font-size: 16px;
+        }
+      }
+      // .creditOptions_div_two_alignment_issue {
+      //   padding-top: 33px;
+      //   margin-bottom: 33px;
+      // }
+      .creditOptionsimg_div {
+        margin: auto;
+        margin-top: 20px;
+        width: 90%;
+        height: 280px;
+        position: relative;
+        .image {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-xl-large) {
+  .Financing_wrapper {
+    // margin: 30px 0px;
+    .imagediv {
+      width: 90%;
+      height: 400px;
+    }
+
+    // .creditOptions_wrapper {
+    //   .creditOptions_div {
+    //     .creditOptions_div_two_alignment_issue {
+    //       padding-top: 0px;
+    //       margin-bottom: 0px;
+    //     }
+    //   }
+    // }
+  }
+}
+
+@media (max-width: $breakpoint-large) {
+  .Financing_wrapper {
+    margin: 30px 0px;
+    .imagediv {
+      height: 380px;
+    }
+
+    .differenceimagediv {
+      width: 90%;
+      height: 230px;
+    }
+
+    .creditOptions_wrapper {
+      .creditOptions_div {
+        ul {
+          padding-left: 15px;
+        }
+        .creditOptionsimg_div {
+          height: 230px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-medium) {
+  .Financing_wrapper {
+    padding-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+
+    .heading_red {
+      margin-top: 20px;
+      font-size: 30px;
+    }
+
+    .imagediv {
+      margin-top: 20px;
+      width: 100%;
+      height: 280px;
+    }
+
+    .getstart_wrapper {
+      flex-direction: column;
+      margin-top: 20px;
+      .getstart_div {
+        width: 80%;
+        margin: auto;
+        h4 {
+          margin-top: 0px;
+        }
+        .getstart_heading_margin {
+          margin-top: 25px;
+        }
+        p {
+          margin-top: 10px;
+        }
+      }
+    }
+
+    .differenceimagediv {
+      margin-top: 40px;
+      width: 100%;
+      height: 150px;
+    }
+
+    .heading {
+      margin-top: 15px;
+      font-size: 32px;
+    }
+
+    .creditOptions_wrapper {
+      flex-direction: column;
+      margin-top: 10px;
+      .creditOptions_div {
+        width: 100%;
+        border-bottom: 3px solid $extra-light-grey;
+        padding-bottom: 20px;
+        h3 {
+          text-align: center;
+          margin-top: 10px;
+        }
+        ul {
+          margin-top: 10px;
+          padding-left: 30px;
+          li {
+            line-height: 29px;
+          }
+        }
+
+        // .creditOptions_div_two_alignment_issue {
+        //   padding-top: 0px;
+        //   margin-bottom: 0px;
+        // }
+      }
+
+      .remove_bottom_bordoer {
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-small) {
+  .Financing_wrapper {
+    .heading_red {
+      font-size: 24.5px;
+    }
+
+    .imagediv {
+      height: 220px;
+    }
+
+    .getstart_wrapper {
+      flex-direction: column;
+      margin-top: 20px;
+      .getstart_div {
+        width: 100%;
+
+        .getstart_heading_margin {
+          margin-top: 20px;
+        }
+
+        p {
+          margin-top: 5px;
+        }
+      }
+    }
+
+    .heading {
+      font-size: 22px;
+    }
+
+    .differenceimagediv {
+      margin-top: 20px;
+    }
+
+    .creditOptions_wrapper {
+      flex-direction: column;
+      margin-top: 10px;
+      .creditOptions_div {
+        h3 {
+          margin-top: 5px;
+          font-size: 19px;
+        }
+        ul {
+          margin-top: 5px;
+          padding-left: 5px;
+          li {
+            font-size: 14px;
+            margin-top: 5px;
+            line-height: 26px;
+          }
+        }
+
+        .creditOptionsimg_div {
+          margin-top: 10px;
+          width: 95%;
+          height: 170px;
+        }
+      }
+    }
+  }
+}
